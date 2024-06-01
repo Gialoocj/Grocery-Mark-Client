@@ -4,6 +4,7 @@ import DefaultLayout from "../layout/DefaultLayout";
 
 import Home from "../pages/Home/Home";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import Coffee from "../pages/Coffee";
 
 const publicRoutes = [
   {
@@ -14,6 +15,11 @@ const publicRoutes = [
   {
     path: config.routes.productDetails,
     component: ProductDetails,
+    layout: DefaultLayout,
+  },
+  {
+    path: config.routes.coffee,
+    component: Coffee,
     layout: DefaultLayout,
   },
 ];

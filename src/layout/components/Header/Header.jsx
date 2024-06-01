@@ -8,11 +8,13 @@ import {
   MenuIcon,
   SearchIcon,
 } from "../../../components/icons/icons";
+import { useNavigate } from "react-router-dom";
 
 const cx = classnames.bind(styles);
 
 const Header = () => {
   const menuRef = useRef();
+  const navigate = useNavigate();
   const [isOpenSearch, setIsOpenSearch] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
@@ -74,6 +76,9 @@ const Header = () => {
               className={cx(
                 "py-[12px] hover:cursor-pointer hover:text-[#77dae6] text-left px-[20px]"
               )}
+              onClick={() => {
+                window.location.href = "/";
+              }}
             >
               Trang chủ
             </li>
@@ -88,6 +93,9 @@ const Header = () => {
               className={cx(
                 "py-[12px] hover:cursor-pointer hover:text-[#77dae6] text-left px-[20px]"
               )}
+              onClick={() => {
+                window.location.href = "/product/coffee";
+              }}
             >
               Coffee
             </li>
@@ -120,6 +128,9 @@ const Header = () => {
             className={cx(
               "list-none text-lg mx-[12px] hover:text-[#77DAE6] hover:cursor-pointer"
             )}
+            onClick={() => {
+              window.location.href = "/";
+            }}
           >
             Trang chủ
           </li>
@@ -127,6 +138,9 @@ const Header = () => {
             className={cx(
               "list-none text-lg mx-[12px] hover:text-[#77DAE6] hover:cursor-pointer"
             )}
+            onClick={() => {
+              window.location.href = "/product/coffee";
+            }}
           >
             Coffee
           </li>

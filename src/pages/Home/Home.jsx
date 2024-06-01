@@ -188,7 +188,8 @@ const Home = () => {
                 key={index}
                 onClick={() => {
                   setSelectedProduct(prod);
-                  navigate("/product-details", { prod });
+                  // navigate("/product-details", { prod });
+                  window.location.href = "/product-details";
                 }}
                 className="lg:col-span-1 bg-white p-4 hover:cursor-pointer hover:shadow-custom-dark rounded-md transition-all duration-300 ease-linear"
               >
