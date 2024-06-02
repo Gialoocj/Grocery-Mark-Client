@@ -9,11 +9,13 @@ const cx = classnames.bind(styles);
 const DefaultLayout = ({ children }) => {
   return (
     <div>
-      <div className={cx("header")}>
+      <div className={cx("header fixed top-0 w-full z-50")}>
         <Header />
       </div>
       <div
-        className={cx("content px-[12px] py-[16px] lg:px-[86px] bg-gray-100")}
+        className={cx(
+          "content px-[12px] py-[16px] lg:px-[86px] bg-gray-100 pt-28"
+        )}
       >
         {children}
       </div>

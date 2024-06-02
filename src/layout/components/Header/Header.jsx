@@ -130,6 +130,9 @@ const Header = () => {
               className={cx(
                 "py-[12px] hover:cursor-pointer hover:text-[#77dae6] text-left px-[20px]"
               )}
+              onClick={() => {
+                window.location.href = "/product/tea";
+              }}
             >
               Trà
             </li>
@@ -147,6 +150,9 @@ const Header = () => {
               className={cx(
                 "py-[12px] hover:cursor-pointer hover:text-[#77dae6] text-left px-[20px]"
               )}
+              onClick={() => {
+                window.location.href = "/product/cacao";
+              }}
             >
               Ca cao
             </li>
@@ -192,6 +198,9 @@ const Header = () => {
             className={cx(
               "list-none text-lg mx-[12px] hover:text-[#77DAE6] hover:cursor-pointer"
             )}
+            onClick={() => {
+              window.location.href = "/product/tea";
+            }}
           >
             Trà
           </li>
@@ -199,6 +208,9 @@ const Header = () => {
             className={cx(
               "list-none text-lg mx-[12px] hover:text-[#77DAE6] hover:cursor-pointer"
             )}
+            onClick={() => {
+              window.location.href = "/product/cacao";
+            }}
           >
             Cacao
           </li>
@@ -244,9 +256,6 @@ const Header = () => {
           >
             <div className="flex justify-between text-lg font-semibold mb-12">
               <h3 className="">You have 3 items in your cart</h3>
-              <h3 className="text-blue-600 hover:text-blue-400 hover:cursor-pointer">
-                See all
-              </h3>
             </div>
             <div className="grid grid-cols-3 gap-6">
               <div className=" h-[148px] rounded-lg flex flex-col justify-center">
@@ -311,7 +320,12 @@ const Header = () => {
               </div>
 
               <div className="flex justify-end col-span-3">
-                <button className="rounded-full h-[44px] w-auto px-12 bg-yellow-400 font-semibold hover:opacity-80">
+                <button
+                  className="rounded-full h-[44px] w-auto px-12 bg-yellow-400 font-semibold hover:opacity-80"
+                  onClick={() => {
+                    window.location.href = "/payment";
+                  }}
+                >
                   Check out
                 </button>
               </div>
@@ -320,7 +334,9 @@ const Header = () => {
         </div>
         <div ref={userRef} className="relative">
           <div
-            className={cx("w-[50px] h-[50px] rounded-md bg-white relative ")}
+            className={cx(
+              "w-[50px] h-[50px] rounded-md bg-white relative hover:cursor-pointer"
+            )}
             onClick={() => {
               handleOpenUser();
             }}
