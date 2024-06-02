@@ -124,7 +124,7 @@ const Coffee = () => {
       <div className="grid grid-cols-1 relative lg:grid-cols-12 md:grid-cols-6 lg:px-4 mt-6">
         <div
           className={cx(
-            "lg:col-span-3 w-[256px] pl-4 lg:pl-0 shadow-custom-light lg:shadow-none absolute left-[-12px] h-[94vh] top-[-24vh] md:top-[-18vh] md:z-40 bg-white lg:bg-transparent lg:static",
+            "lg:col-span-3 w-[256px] pl-8 lg:pl-0 shadow-custom-light lg:shadow-none top-0 z-30 left-[-12px] h-[100vh] fixed md:z-40 bg-white lg:bg-transparent lg:static",
             isMobile
               ? isOpenFilter
                 ? "transition-all duration-300 translate-x-0"

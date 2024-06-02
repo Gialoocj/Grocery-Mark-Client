@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { publicRoutes } from "./routes";
 
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+
 import DefaultLayout from "./layout/DefaultLayout/DefaultLayout";
 
 const App = () => {
@@ -30,6 +32,8 @@ const App = () => {
               />
             );
           })}
+
+          <Route exact path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>

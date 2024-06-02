@@ -36,3 +36,25 @@
     opacity: 0;
   }
 }
+
+.transform-origin-open {
+  transform-origin: top right;
+  transform: scale(1);
+  transition: 0.3s linear;
+}
+
+.transform-origin-close {
+  transform: scale(0);
+}
+
+.open-cart {
+  transform: scale(1);
+  transform-origin: top right;
+  transition: 0.3s linear;
+}
+
+.close-cart {
+  transform: scale(0);
+  transform-origin: top right;
+  transition: 0.3s linear;
+}
